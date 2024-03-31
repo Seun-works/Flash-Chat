@@ -14,6 +14,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var passwordTextfield: UITextField!
     
+    
     @IBAction func registerPressed(_ sender: UIButton) {
         if let password = passwordTextfield.text, let email = emailTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
@@ -21,7 +22,7 @@ class RegisterViewController: UIViewController {
                     print(e)
                     return
                 } else {
-                    self.performSegue(withIdentifier: "RegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerSegue, sender: self)
                 }
                         
             }
@@ -30,9 +31,6 @@ class RegisterViewController: UIViewController {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-        let destinationVC = segue.destination
-        
        
     }
     
