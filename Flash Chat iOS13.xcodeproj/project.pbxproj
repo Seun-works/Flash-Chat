@@ -49,6 +49,7 @@
 		F94CA5C32BB8C21700D50DA2 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA5C22BB8C21700D50DA2 /* Message.swift */; };
 		F94CA5C62BB8C9D000D50DA2 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F94CA5C42BB8C9D000D50DA2 /* MessageCell.swift */; };
 		F94CA5C72BB8C9D000D50DA2 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F94CA5C52BB8C9D000D50DA2 /* MessageCell.xib */; };
+		F94CA5CA2BB979D100D50DA2 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F94CA5C92BB979D100D50DA2 /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -97,6 +98,7 @@
 				F94CA5952BB81F1400D50DA2 /* FirebaseAppDistribution-Beta in Frameworks */,
 				F94CA5992BB81F1400D50DA2 /* FirebaseAuthCombine-Community in Frameworks */,
 				F94CA5B72BB81F1400D50DA2 /* FirebasePerformance in Frameworks */,
+				F94CA5CA2BB979D100D50DA2 /* IQKeyboardManagerSwift in Frameworks */,
 				F94CA5AF2BB81F1400D50DA2 /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
 				F94CA5BD2BB81F1400D50DA2 /* FirebaseStorage in Frameworks */,
 				F94CA5A12BB81F1400D50DA2 /* FirebaseDynamicLinks in Frameworks */,
@@ -216,6 +218,7 @@
 				F94CA5BA2BB81F1400D50DA2 /* FirebaseRemoteConfigSwift */,
 				F94CA5BC2BB81F1400D50DA2 /* FirebaseStorage */,
 				F94CA5BE2BB81F1400D50DA2 /* FirebaseStorageCombine-Community */,
+				F94CA5C92BB979D100D50DA2 /* IQKeyboardManagerSwift */,
 			);
 			productName = "Flash Chat iOS13";
 			productReference = 0B628173235DEE8100E35CAF /* Flash Chat iOS13.app */;
@@ -247,6 +250,7 @@
 			mainGroup = 0B62816A235DEE8100E35CAF;
 			packageReferences = (
 				F94CA5892BB81F1400D50DA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				F94CA5C82BB979D100D50DA2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 0B628174235DEE8100E35CAF /* Products */;
 			projectDirPath = "";
@@ -494,6 +498,14 @@
 				minimumVersion = 10.23.1;
 			};
 		};
+		F94CA5C82BB979D100D50DA2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -631,6 +643,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F94CA5892BB81F1400D50DA2 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageCombine-Community";
+		};
+		F94CA5C92BB979D100D50DA2 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F94CA5C82BB979D100D50DA2 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
